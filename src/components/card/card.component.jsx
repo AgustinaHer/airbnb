@@ -9,22 +9,34 @@ export const Card = () => (
         <h1>
             Réservez des hébergement et des activités uniques.
         </h1>
-        <div className='item'>
-            <p>Où</p>
-            <div className='item-details'>
+        <div className='card__item-container'>
+            <div className='card__item-container__item'>
+                <p>Où</p> 
+                <div className='card__item-container__item__details'>
                 <FormInput label='Partout'/>
+                </div>
             </div>
         </div>
-        <div className='item'>
-            <p>Arrivée Départ</p> 
-            <div className='item-details'>
-                <FormInput label='jj/mm/aaaa'/>
+        <div className='card__item-container'>
+            <div className='card__item-container__item-ad'>
+                <p className='card__item-container__item-ad__title'>Arrivée</p> 
+                <div className='card__item-container__item-ad__details'>
+                    <FormInput label='jj/mm/aaaa'/>
+                </div>
             </div>
+            <div className='card__item-container__item-ad'>
+                <p className='card__item-container__item-ad__title'>Départ</p> 
+                <div className='card__item-container__item-ad__details'>
+                    <FormInput label='jj/mm/aaaa'/>
+                </div>
         </div>
-        <div className='item'>
-            <p>VOYAGEURS</p>
-            <div className='item-details'>
-            <FormInput label='Voyaguers'/>
+        </div>
+        <div className='card__item-container'>
+            <div className='card__item-container__item'>
+                <p>Voyaguers</p>
+                <div className='card__item-container__item__details'>
+                <FormInput label='Voyaguers'/>
+                </div>
             </div>
         </div>
         <div className='button'>
