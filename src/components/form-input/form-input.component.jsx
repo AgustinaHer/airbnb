@@ -4,10 +4,7 @@ import './form-input.styles.scss';
 
 const FormInput = ({label}) => (
     <div className='group'>
-        <input className='group__form-input'/>
-        <label className='group__form-input-label'>
-            {label}
-        </label>
+        <input className='group__form-input' placeholder={label}/>
     </div>
 );
 

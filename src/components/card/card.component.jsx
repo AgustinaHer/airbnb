@@ -6,14 +6,12 @@ import './card.styles.scss';
 
 export const Card = () => (
     <div className='card'>
-        <h1>
-            Réservez des hébergement et des activités uniques.
-        </h1>
+        <h1>Réservez des hébergement et des activités uniques.</h1>
         <div className='card__item-container'>
             <div className='card__item-container__item'>
-                <p>Où</p> 
+                <p className='card__item-container__item__title'>Où</p> 
                 <div className='card__item-container__item__details'>
-                <FormInput label='Partout'/>
+                    <FormInput label='Partout'/>  
                 </div>
             </div>
         </div>
@@ -33,7 +31,7 @@ export const Card = () => (
         </div>
         <div className='card__item-container'>
             <div className='card__item-container__item'>
-                <p>Voyaguers</p>
+                <p className='card__item-container__item-ad__title'>Voyaguers</p>
                 <div className='card__item-container__item__details'>
                 <FormInput label='Voyaguers'/>
                 </div>
