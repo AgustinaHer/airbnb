@@ -2,7 +2,7 @@
   "name": "airbnb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/AgustinaHer/airbnb",
+  "homepage": "https://agustinaher.github.io/airbnb/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
