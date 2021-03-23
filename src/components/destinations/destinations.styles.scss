@@ -1,0 +1,88 @@
+.destinations{
+    display: flex;
+    flex-direction: column;
+    color: rgba(72, 72, 72, 1);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 15%;
+
+    &__subtitle{
+        margin-bottom: 2%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    
+    &__card{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+        width: 100%;
+        justify-content: center;
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            &__img-container{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+                &__img{
+                    background-size: cover;
+                    background-position: center;
+                    height: 239px;
+                    width: 391px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                &__logo{
+                    z-index: 2;
+                    position: absolute;
+                    height: 52.513206481933594px;
+                    width: 48.8779411315918px;
+                    top: 40%;
+                    left: 45%;
+                }
+            }
+            
+            &__text1{
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 14px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-left: 8%;
+                color: rgba(145, 70, 105, 1);
+                text-transform: uppercase;
+            }
+            
+            &__text2{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-left: 8%;
+            }
+        }
+    }
+}

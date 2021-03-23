@@ -1,6 +1,10 @@
 import React from 'react';
-import Logo from './Rectangle 7.jpg';
+
 import './hebergements.styles.scss';
+import {BrowserRouter, Link} from 'react-router-dom';
+import {ReactComponent as Logo} from './Vector.svg';
+
+import flecha from './Vector 1.jpg';
 
 const Hebergements = () => (
     <div className='hebergements'>
@@ -9,7 +13,19 @@ const Hebergements = () => (
               Une sélection de logements vérifiés selon des critères de qualité et de design
             </span>
             <div className='hebergements__details'>
-                <img src={Logo} alt=''/>
+                <div className='hebergements__details__img'>
+                    <BrowserRouter>
+                        <Link className='hebergements__details__img__logo-container'>
+                            <Logo className='logo' />
+                        </Link>
+                    </BrowserRouter>
+                    <div className='hebergements__details__img__button'>
+                        <h1 className='hebergements__details__img__button__text'>
+                            Découvrir des logements
+                        </h1>
+                        <img src={flecha} alt=''/>
+                    </div>
+                </div>
             </div>
     </div>
 );
